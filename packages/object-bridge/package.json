@@ -1,0 +1,30 @@
+{
+  "name": "@elemental-figma/object-bridge",
+  "version": "0.0.1-beta.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "types:patch": "tsx scripts/patch-figma-plugin-typings.ts",
+    "build:main": "tsc -p tsconfig.json",
+    "build:types": "tsc -d -p tsconfig.json",
+    "build": "npm run build:main && npm run build:types",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@figma-plugin/helpers": "^0.15.2"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.85.0",
+    "@figma/widget-typings": "^1.9.1",
+    "@figma-plugin/helpers": "^0.15.2",
+    "@types/node": "^20.11.17",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "path-exists": "^5.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
